@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: res-user
+  cloud:
+    config:
+      fail-fast: true
+      profile: dev
+      label: master
+      discovery:
+        enabled: true                                 # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
+        serviceId: config-server-eureka # 指定config server在服务发现中的serviceId，默认为：configserver
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:                           # 指定数据源
+    platform: h2                        # 指定数据源类型
+    schema: classpath:schema.sql        # 指定h2数据库的建表脚本
+    data: classpath:data.sql            # 指定h2数据库的insert脚本
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
+curprofile: default      

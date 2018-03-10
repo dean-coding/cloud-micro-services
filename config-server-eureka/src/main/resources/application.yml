@@ -1,0 +1,30 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: config-server-eureka
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config-repo                                            
+   
+          
+  #配置git仓库位置，仓库路径相对位置，用户名，密码
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: http://git.oschina.net/didispace/SpringBoot-Learning/
+#          search-paths:
+#            - classpath:/config-repo
+#          username: username
+#          password: password
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
