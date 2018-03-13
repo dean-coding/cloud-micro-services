@@ -14,3 +14,4 @@ zuul:
    ignored-patterns: /**/admin/**                     
    routes:
       res-user : users/**
+      res-company : companys/**

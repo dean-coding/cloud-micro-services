@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: res-company
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:test}
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:root}
+  jpa:
+#    show-sql: true
+#    properties:
+#      hibernate.generate_statistics: true
+#      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: update  
 eureka:
   client:
     serviceUrl:
