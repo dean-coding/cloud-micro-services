@@ -15,6 +15,7 @@
 		<module>hystrix-dashboard</module>
 		<module>res-company</module>
 		<module>res-user</module>
+		<module>res-demo</module>
 	</modules>
 
 	<properties>

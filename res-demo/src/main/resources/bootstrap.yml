@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: res-demo
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
+curprofile: default      

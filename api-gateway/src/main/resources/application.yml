@@ -15,3 +15,4 @@ zuul:
    routes:
       res-user : users/**
       res-company : companys/**
+      res-demo : demo/**
