@@ -38,5 +38,5 @@
 
 ## 测试:
 <img src="./testpics/eureka.jpeg" width="660px" height="400px"> 
-<img src="./testpics/request.jpeg" width="660px" height="400px"> 
-<img src="./testpics/request-per.jpeg" width="660px" height="400px"> 
+<img src="./testpics/request.jpeg" width="660px" height="280px"> 
+<img src="./testpics/request-per.jpeg" width="660px" height="360px"> 
