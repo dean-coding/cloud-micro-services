@@ -14,6 +14,7 @@ import feign.hystrix.FallbackFactory;
 
 /**
  * 使用@FeignClient("res-user")注解绑定res-user服务，还可以使用url参数指定一个URL。 调用其他资源服务
+ * 异常处理: UserFeignClientHystrixFactory implements FallbackFactory<UserFeignClient> 
  * 注意：@FeignClient fallback 默认情况下不会起作用，需要修改配置文件：
  * feign:
      hystrix:

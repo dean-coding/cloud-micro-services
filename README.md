@@ -18,7 +18,10 @@
 | IDE   | STS 或者 IntelliJ IDEA |
 | Maven | 3.x                  |
 | spring clound | Dalston.SR5 |
+| -> spring clound | Edgware.SR5 |
 | spring boot | 1.5.6 |
+| -> spring boot | 1.5.18 |
+
 ## 主机名配置：
 
 | 主机名配置（C:\Windows\System32\drivers\etc\hosts文件） |
