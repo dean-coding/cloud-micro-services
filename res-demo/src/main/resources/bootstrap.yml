@@ -3,8 +3,11 @@ spring:
     name: res-demo
 eureka:
   client:
+    registry-fetch-interval-seconds: 10 # 客户端拉取服务注册信息间隔（缺省为30s） 对于api-gateway，如果要迅速获取服务注册状态，可以缩小该值，比如5秒。
     serviceUrl:
       defaultZone: http://discovery:8761/eureka/
   instance:
     preferIpAddress: true
+    lease-renewal-interval-in-seconds: 5      # 心跳时间(client发送到server端)，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 15  # 发呆时间(server判断移除client的时长)，即服务续约到期时间（缺省为90s）
 curprofile: default      

@@ -3,16 +3,3 @@ spring:
     name: api-gateway
 server:
   port: 8000
-eureka:
-  instance:
-    hostname: gateway
-  client:
-    serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
-zuul:
-   ignored-services: '*'  # 需要忽视的服务(配置后将不会被路由)
-   ignored-patterns: /**/admin/**                     
-   routes:
-      res-user : users/**
-      res-company : companys/**
-      res-demo : demo/**

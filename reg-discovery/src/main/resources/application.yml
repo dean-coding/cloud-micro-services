@@ -4,6 +4,9 @@ server:
 eureka:
   instance:
     hostname: discovery         # 指定该Eureka实例的主机名
+  server:
+    enable-self-preservation: false      # 关闭自我保护模式（快速剔除不可用的实例）保护期间实例出现问题，那么客户端很容易拿到实际已经不存在的服务实例，会出现调用失败的情况，所以客户端必须要有容错机制，比如可以使用请求重试、断路器等机制
+    eviction-interval-timer-in-ms: 5000  # 续期时间，即扫描失效服务的间隔时间（缺省为60*1000ms）
   client:
     registerWithEureka: false
     fetchRegistry: false
