@@ -14,7 +14,7 @@ import feign.hystrix.FallbackFactory;
  * 调用其他资源服务 异常处理:
  * UserFeignClientHystrixFactory implements FallbackFactory<UserFeignClient>
  * 注意：
- * @FeignClient fallback 默认情况下不会起作用，需要修改配置文件： feign: hystrix: enabled: true
+ * @FeignClient fallback 默认情况下不会起作用，需要修改配置文件： client: hystrix: enabled: true
  */
 @FeignClient(name = "res-user-c", fallbackFactory = UserFeignClientHystrixFactory.class)
 public interface UserFeignClient {

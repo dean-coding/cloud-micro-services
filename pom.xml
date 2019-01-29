@@ -16,6 +16,8 @@
 		<module>res-company</module>
 		<module>res-user</module>
 		<module>res-demo</module>
+		<module>res-service-order</module>
+		<module>res-service-inventory</module>
 	</modules>
 
 	<properties>
@@ -23,8 +25,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<app.version>1.0.1</app.version>
-<!-- 	    <spring-cloud.version>Dalston.SR5</spring-cloud.version>		
- -->
+	    <!--<spring-cloud.version>Dalston.SR5</spring-cloud.version>-->
 		<spring-cloud.version>Edgware.SR5</spring-cloud.version>
 	</properties>
 	<!-- 使用最新的spring-boot版本 -->
@@ -39,7 +40,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Dalston.SR5</version>
+				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
