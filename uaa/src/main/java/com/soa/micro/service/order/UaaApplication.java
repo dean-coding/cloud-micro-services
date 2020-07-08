@@ -9,10 +9,10 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 @EnableDiscoveryClient // 启用Eureka发现功能
 @EnableHystrixDashboard
-public class DemoApplication {
+public class UaaApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(UaaApplication.class, args);
 	}
 }

@@ -17,7 +17,7 @@
 		<module>res-user</module>
 		<module>res-demo</module>
 		<module>res-service-order</module>
-		<module>res-service-inventory</module>
+		<module>uaa</module>
 	</modules>
 
 	<properties>
